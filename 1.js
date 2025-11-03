@@ -13,5 +13,4 @@ function fetchData(){
 fetchData();
 
 
-
-//await is used to hadle the promise and await is the keyword  
+i
