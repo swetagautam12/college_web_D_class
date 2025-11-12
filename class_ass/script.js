@@ -15,8 +15,8 @@ async function fetchProducts(url) {
       card.innerHTML = `
         <img src="${product.thumbnail}" alt="${product.title}">
         <h2>${product.title}</h2>
-        <p class="price">ruppee${product.price}</p>
-        <p class="rating">rating ${product.rating}</p>
+        <p class="price">${product.price}</p>
+        <p class="rating"> ${product.rating}</p>
       `;
       container.appendChild(card);
     });
