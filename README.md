@@ -1,1 +1,0 @@
-# college_web_D_class
