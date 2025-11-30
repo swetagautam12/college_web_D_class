@@ -1,0 +1,62 @@
+/* ---------------- HERO ANIMATION ---------------- */
+
+.hero-section {
+  background: url("https://i.ibb.co/XyJNNLj/space-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+/* ASTRO FLOAT */
+.astronaut {
+  width: 180px;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%      { transform: translateY(-25px); }
+}
+
+/* ROCKET MOVING */
+.rocket {
+  width: 150px;
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  animation: rocketMove 6s linear infinite;
+}
+
+@keyframes rocketMove {
+  0% { transform: translateY(0px) rotate(-10deg); }
+  50% { transform: translateY(-40px) rotate(10deg); }
+  100% { transform: translateY(0px) rotate(-10deg); }
+}
+
+/* ---------------- NAVBAR HOVER ANIMATION ---------------- */
+
+.nav-anim {
+  transition: all 0.3s ease;
+}
+
+.nav-anim:hover {
+  background: #0d6efd;
+  border-radius: 5px;
+  padding: 8px 15px;
+  color: white !important;
+}
+
+/* ---------------- CARD HOVER EFFECT ---------------- */
+
+.card-hover {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.3);
+}

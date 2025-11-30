@@ -1,0 +1,72 @@
+/* Element Selector */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* ID Selector */
+#main-title {
+    text-align: center;
+    color: #0057FF; /* HEX */
+}
+
+/* Class Selector */
+.about-section {
+    background: rgba(0, 87, 255, 0.1); /* RGBA */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    color: rgb(0, 100, 150); /* RGB */
+}
+
+/* Highlight text using HSL */
+.highlight {
+    background: hsl(200, 80%, 90%);
+    padding: 5px;
+    border-left: 5px solid hsl(200, 80%, 40%);
+}
+
+/* Attribute Selector */
+a[target="_blank"] {
+    color: #FF5733; /* HEX */
+    text-decoration: none;
+}
+
+/* Pseudo-Class Selector */
+a:hover {
+    color: #C70039;
+}
+
+/* Pseudo-Element Selector */
+.footer-text::after {
+    content: " | All Rights Reserved";
+    color: green;
+}
+
+/* ----- TASK 4: Movie List ----- */
+.movies-list li {
+    padding: 5px;
+}
+
+.movies-list .favorite {
+    background: gold;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+}
+
+/* ----- TASK 5: Cities List (Random Custom Styles) ----- */
+.cities-list {
+    background: rgba(255, 99, 71, 0.2);
+    padding: 10px;
+    border-left: 5px solid tomato;
+}
+
+.cities-list li {
+    margin: 5px;
+    font-style: italic;
+    color: hsl(0, 70%, 30%);
+}
