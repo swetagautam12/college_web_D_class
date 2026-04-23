@@ -80,3 +80,8 @@ app.post("/signup", async (req, res) => {
     if (exist) {                        
         return res.send("user already exist");
     }   
+    catch(error ){
+        console.log("error:",error );
+        res.status (500).send("Internal Server Error");     
+        
+    }
